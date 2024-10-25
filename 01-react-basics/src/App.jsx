@@ -1,17 +1,21 @@
 import React from 'react';
 import './styles.css';
 
+function sayGoodbye() {
+  return "Saynora"
+}
+
 function App() {
   return(
   <React.Fragment>
   <h1>Hello World</h1>
-  <p>Welcome to our first React App</p>
-  <img src={require('./bubbletea.jpg')} alt="bubble tea" />
-  <img src={require('./vite.svg')} alt="vite logo"/>
-  {/* <img src={require('./vite.svg').default} alt="vite"/>
-  <img src={require('./bubbletea.jpg')} alt="bubble tea"/> */}
+  <p style={{backgroundColor:'yellow'}}>Welcome to our first React App</p>
+  {/*<img src={require('./vite.svg').default}/>}
+  {<img src={require('./bubbletea.jpg').default}/>*/}
+  <p>{sayGoodbye()}</p>
   </React.Fragment>
   );
+  
 }
 
 export default App;
