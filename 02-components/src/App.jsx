@@ -1,5 +1,8 @@
 import React from 'react';
 
+//1. Component is a function
+//2. First character is Capital letter
+//3. 
 function sayGoodbye() {
   return "Goodbye"
   }
@@ -12,7 +15,7 @@ function displayHeader() {
 
 function ImageFrame() {
     return (
-    <img src={require('./dog.jpg')} alt="Cute puppy" width="300" height="300"/>
+    <img src={require('./dog.jpg')} alt="Cute puppy" width="300" height="300" styles="border: 20px solid red;"/>
     )
   }
 
